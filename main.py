@@ -77,7 +77,7 @@ class Application(tk.Frame):
             self.currentFile = 1
         self.stringNo = str(self.currentFile)
 
-        filename = "C:/Users/dawid/PycharmProjects/pythonProject2/imgs/img" + self.stringNo+ ".jpg"
+        filename = "/imgs/img" + self.stringNo+ ".jpg"
 
         self.photoLbl.destroy()
         self.photo = Image.open(filename)
@@ -101,7 +101,7 @@ class Application(tk.Frame):
             self.currentFile = self.howManyFiles
         self.stringNo = str(self.currentFile)
 
-        filename = "C:/Users/dawid/PycharmProjects/pythonProject2/imgs/img" + self.stringNo + ".jpg"
+        filename = "/imgs/img" + self.stringNo + ".jpg"
 
         self.photoLbl.destroy()
         self.photo = Image.open(filename)
@@ -112,7 +112,7 @@ class Application(tk.Frame):
 
 root = tk.Tk()
 root.geometry("800x600")
-#root.resizable(False, False)
+root.resizable(False, False)
 
 
 
